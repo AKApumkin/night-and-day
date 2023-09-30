@@ -1,4 +1,5 @@
-#overview
+# Overview
+
 This mod is to simulate a day and night cycle in Barotrauma.
 
 Europa has a 3.5 day rotation cycle, but the hemisphere always faces Jupiter. 
