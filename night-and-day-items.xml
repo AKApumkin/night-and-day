@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Europan Watch" identifier="europanwatch" category="Equipment,Diving" Tags="smallitem,provocative,watch" cargocontaineridentifier="metalcrate" Scale="0.12" impactsoundtag="impact_metal_light">
+    <Preferredcontainer secondary="respawncontainer" amount="1" spawnprobability="1" notcampaign="true" />
+    <PreferredContainer primary="divingcab" amount="1" spawnprobability="1" notcampaign="true" />
+    <PreferredContainer secondary="wreckstoragecab" amount="1" spawnprobability="0.05" />
+    <Price baseprice="150" minavailable="1">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" minavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="2" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.25" />
+      <Price storeidentifier="merchantmine" />
+      <Price storeidentifier="merchantengineering" multiplier="0.9" minavailable="2" />
+    </Price>
+    <Deconstruct time="15">
+      <Item identifier="copper" />
+      <Item identifier="plastic" amount="2" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/night-and-day-images.png" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/night-and-day-images.png" sourcerect="0,0,256,256" scale="0.2" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="22" density="12" />
+    <AiTarget sight="500" staticsight="true" />
+    <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-25,0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" targettype="Contained" Condition="-0.005">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+    </Holdable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+</Items>

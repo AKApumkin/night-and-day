@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<style>
+  <europanWatch color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="europanWatch" texture="%ModDir%/night-and-day-images.png" sourcerect="0,0,256,256" maintainaspectratio="true" tile="false" origin="0.5,0.5" compress="true" />
+  </europanWatch>
+  <moonLight color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="moonLight" texture="%ModDir%/night-and-day-images.png" sourcerect="256,0,256,256" maintainaspectratio="true" tile="false" origin="0.5,0.5" compress="true" />
+  </moonLight>
+  <sunLight color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="sunLight" texture="%ModDir%/night-and-day-images.png" sourcerect="0,256,256,256" maintainaspectratio="true" tile="false" origin="0.5,0.5" compress="true" />
+  </sunLight>
+  <huskstage1 color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="huskstage1" texture="%ModDir%/night-and-day-warning.png" sourcerect="0,0,256,256" maintainaspectratio="true" tile="false" origin="0.5,0.5" compress="false" />
+  </huskstage1>
+  <huskstage2 color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="huskstage2" texture="%ModDir%/night-and-day-warning.png" sourcerect="256,0,256,256" maintainaspectratio="true" tile="false" origin="0.5,0.5" compress="false" />
+  </huskstage2>
+  <huskstage3 color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="huskstage3" texture="%ModDir%/night-and-day-warning.png" sourcerect="0,256,256,256" maintainaspectratio="true" tile="false" origin="0.5,0.5" compress="false" />
+  </huskstage3>
+  <huskstage4 color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="huskstage4" texture="%ModDir%/night-and-day-warning.png" sourcerect="256,256,256,256" maintainaspectratio="true" tile="false" origin="0.5,0.5" compress="false" />
+  </huskstage4>
+</style>

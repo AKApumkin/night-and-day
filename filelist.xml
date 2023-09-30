@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="night and day" steamworkshopid="3038544387" corepackage="false" modversion="1.0.0" gameversion="1.0.21.0" installtime="1695227156" expectedhash="7CD6918AC463D358C6BB098A3657CBF1">
+  <Item file="%ModDir%/night-and-day-items.xml" />
+  <Jobs file="%ModDir%/night-and-day-captain.xml" />
+  <UIStyle file="%ModDir%/night-and-day-ui.xml" />
+</contentpackage>
